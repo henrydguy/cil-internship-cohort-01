@@ -1,0 +1,16 @@
+<html>
+  <body></body>
+  <script>
+    var burl = "http://universities.hipolabs.com/search?country=United+Kingdom";
+
+    var url = burl;
+
+    var ourRequest = new XMLHttpRequest();
+
+    ourRequest.open("GET", url, true);
+    ourRequest.onload = function () {
+      console.log(ourRequest.responseText);
+    };
+    ourRequest.send();
+  </script>
+</html>
